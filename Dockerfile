@@ -1,5 +1,5 @@
-FROM openjdk:11.0.20-jdk
+FROM openjdk:21-jdk-slim
 COPY . /app
 WORKDIR /app
-RUN javac app.java
+RUN javac App.java
 CMD ["java", "App"]
