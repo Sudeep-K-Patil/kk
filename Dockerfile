@@ -1,4 +1,4 @@
-FROM openjdk:21-jdk-slim
+FROM openjdk:21-jdk
 COPY . /app
 WORKDIR /app
 RUN javac App.java
