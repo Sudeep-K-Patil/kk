@@ -1,4 +1,4 @@
-FROM openjdk:21.0.10
+FROM openjdk:21
 COPY . /app
 WORKDIR /app
 RUN javac App.java
