@@ -1,5 +1,11 @@
-FROM openjdk:17
+# Use official Python image
+FROM python:3.10
+
+# Set working directory
 WORKDIR /app
+
+# Copy files into container
 COPY . .
-RUN javac Grade.java
-CMD ["java", "Grade"]
+
+# Run Python file
+CMD ["python", "app.py"]
