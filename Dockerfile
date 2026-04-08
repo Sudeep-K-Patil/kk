@@ -1,9 +1,5 @@
-FROM python:3.9-slim
-
+FROM openjdk:17
 WORKDIR /app
-
-COPY app.py .
-
-EXPOSE 5020
-
-CMD ["python", "app.py"]
+COPY . .
+RUN javac Grade.java
+CMD ["java", "Grade"]
